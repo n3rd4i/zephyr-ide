@@ -1,4 +1,4 @@
-﻿# ZephyrProeject IDE Setup guide
+﻿# ZephyrProject IDE Setup guide
 
 ## Dependencies
 1. [System](https://docs.zephyrproject.org/latest/getting_started/installation_win.html#windows-install-native)

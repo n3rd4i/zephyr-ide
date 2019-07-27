@@ -34,7 +34,7 @@
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
 
-      <!-- <dependency id="cmake" /> -->
+      <dependency id="cmake" version="3.14.6" />
       <dependency id="git" />
       <dependency id="python" />
       <dependency id="ninja" />
