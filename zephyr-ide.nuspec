@@ -28,10 +28,14 @@
     <tags>zephyr-ide zephyr ide development embedded</tags>
     <summary>Zephyr based IDE from multiple components</summary>
     <description>
-    # Components
-    * VSCode IDE
-    * ARM GNU Embedded toolchain
-    * CMake build system
+    # Components:
+    * [VSCode](http://aka.ms/vscode) based IDE (w/ ext. cpptools, cortex-debug)
+    * [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
+    * [CMake](https://cmake.org/) open-source system that manages the build process.
+    * [nRF Command Line Tools](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Command-Line-Tools)
+    * [J-Link Software and Documentation pack for Windows](https://www.segger.com/downloads/jlink/JLink_Windows.exe)
+    * [OpenOCD](http://openocd.org/), the Open On-Chip Debugger
+    * [pyOCD](https://github.com/mbedmicro/pyOCD) is an open source Python package for programming and debugging Arm Cortex-M microcontrollers
     </description>
     <releaseNotes>https://github.com/n3rd4i/zephyr-ide/blob/master/ReadMe.md</releaseNotes>
     <!-- =============================== -->
@@ -47,6 +51,8 @@
       <dependency id="gperf" />
 
       <dependency id="zephyr-gnuarmemb" version="7.2.1.20170904" />
+      <dependency id="nrfjprog" version="10.2.1" />
+      <dependency id="openocd" version="0.10.0.20190715" />
 
       <dependency id="vscode" version="1.34.0" />
       <dependency id="vscode-cpptools" version="0.24.1" />

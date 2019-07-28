@@ -1,4 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+. "$(Join-Path $toolsDir commonEnv.ps1)"
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'zephyr-ide*'
@@ -23,3 +26,6 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
+
+Remove-Item -recurse -force $ZEPHYRPROJECT
+Uninstall-ChocolateyEnvironmentVariable 'ZEPHYR_BASE'

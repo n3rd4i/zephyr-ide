@@ -31,7 +31,7 @@
 		{
 			"label": "install",
 			"type": "shell",
-			"command": "start cmd '/k pushd ${workspaceFolder} && choco install ${workspaceFolderBasename} -fdv -s .' -verb runas",
+			"command": "start cmd '/k pushd ${workspaceFolder} && choco install ${workspaceFolderBasename} -fdv -s \"''.;https://chocolatey.org/api/v2/''\"' -verb runas",
 			"options": {"shell": {"executable": "powershell.exe","args": ["-c"]}},
 			"presentation": {
 				"echo": true,

@@ -4,8 +4,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$(Join-Path $toolsDir commonEnv.ps1)"
 
 # Installed in 'User Space' using juntion
-Start-ChocolateyProcessAsAdmin "/C mkdir `"$SOURCE_DIR`"" $ENV:COMSPEC
-Start-ChocolateyProcessAsAdmin "/C mklink /J $LOCAL_APP_DIR `"$SOURCE_DIR`"" $ENV:COMSPEC
+Start-ChocolateyProcessAsAdmin "/C if not exist `"$SOURCE_DIR`" mkdir `"$SOURCE_DIR`"" $ENV:COMSPEC
+Start-ChocolateyProcessAsAdmin "/C if not exist $LOCAL_APP_DIR mklink /J $LOCAL_APP_DIR `"$SOURCE_DIR`"" $ENV:COMSPEC
 
 # https://docs.zephyrproject.org/latest/getting_started/index.html#bootstrap-west
 Start-ChocolateyProcessAsAdmin '/C pip3 install west' $ENV:COMSPEC
