@@ -42,21 +42,20 @@
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-
       <dependency id="cmake" version="3.14.6" />
-      <dependency id="git" />
-      <dependency id="python" />
-      <dependency id="ninja" />
-      <dependency id="dtc-msys2" />
-      <dependency id="gperf" />
+      <dependency id="git" version="2.22.0" />
+      <dependency id="python" version="3.7.4" />
+      <dependency id="ninja" version="1.9.0.20190208" />
+      <dependency id="dtc-msys2" version="1.4.7" />
+      <dependency id="gperf" version="3.1" />
 
       <dependency id="zephyr-gnuarmemb" version="7.2.1.20170904" />
       <dependency id="nrfjprog" version="10.2.1" />
       <dependency id="openocd" version="0.10.0.20190715" />
 
-      <dependency id="vscode" version="1.34.0" />
+      <dependency id="vscode" version="1.37.0" />
       <dependency id="vscode-cpptools" version="0.24.1" />
-      <dependency id="vscode-cortex-debug" version="0.3.0" />
+      <dependency id="vscode-cortex-debug" version="0.3.1" />
       <!-- <dependency id="vscode-astyle" /> -->
     </dependencies>
     <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
