@@ -1,4 +1,4 @@
-﻿# $ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 Update-SessionEnvironment
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$(Join-Path $toolsDir commonEnv.ps1)"
