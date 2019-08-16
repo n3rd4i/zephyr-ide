@@ -49,7 +49,7 @@
       <dependency id="dtc-msys2" version="1.4.7" />
       <dependency id="gperf" version="3.1" />
 
-      <dependency id="zephyr-gnuarmemb" version="7.2.1.20170904" />
+      <dependency id="zephyr-gnuarmemb" version="[7.3.1]" />
       <dependency id="nrfjprog" version="10.2.1" />
       <dependency id="openocd" version="0.10.0.20190715" />
 
