@@ -50,7 +50,7 @@
       <dependency id="gperf" version="3.1" />
 
       <dependency id="zephyr-gnuarmemb" version="[7.3.1]" />
-      <dependency id="nrfjprog" version="10.2.1" />
+      <dependency id="nrfjprog" version="10.3.0" />
       <dependency id="openocd" version="0.10.0.20190715" />
 
       <dependency id="vscode" version="1.37.0" />

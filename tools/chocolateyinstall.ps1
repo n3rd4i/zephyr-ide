@@ -11,7 +11,7 @@ Start-ChocolateyProcessAsAdmin "/C if not exist $LOCAL_APP_DIR mklink /J $LOCAL_
 Start-ChocolateyProcessAsAdmin '/C pip3 install -U west' $ENV:COMSPEC
 
 # https://docs.zephyrproject.org/latest/getting_started/index.html#clone-the-zephyr-repositories
-& $ENV:COMSPEC /C pushd $LOCAL_APP_DIR '&&' west init $ZEPHYR_INSTALL_DIR
+& $ENV:COMSPEC /C pushd $LOCAL_APP_DIR '&&' west init $ZEPHYR_INSTALL_DIR --mr v$ENV:ChocolateyPackageVersion
 & $ENV:COMSPEC /C pushd $ZEPHYRPROJECT '&&' west update
 Install-ChocolateyEnvironmentVariable "ZEPHYR_BASE" "$ZEPHYR_BASE"
 
