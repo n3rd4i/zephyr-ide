@@ -28,7 +28,11 @@
     <tags>zephyr-ide zephyr ide development embedded</tags>
     <summary>Zephyr based IDE from multiple components</summary>
     <description>
-    # Components:
+    ## Ready-to-start Windows IDE for developing with Zephyr platform
+    This package is a set of tools needed for a Windows user to start developing applications with [Zephyr Project](https://www.zephyrproject.org/).
+    Using [VSCode](http://aka.ms/vscode) as main IDE with the source for the Zephyr Project together with GNU ARM toolchain.
+
+    ### Components:
     * [VSCode](http://aka.ms/vscode) based IDE (w/ ext. cpptools, cortex-debug)
     * [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
     * [CMake](https://cmake.org/) open-source system that manages the build process.
